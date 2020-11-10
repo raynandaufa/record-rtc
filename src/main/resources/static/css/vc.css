@@ -1,0 +1,58 @@
+body {
+	background:#EEE;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+#header {
+	width:100%;
+	max-width:960px;
+	margin:20px auto 0;
+	position:relative;
+	overflow: hidden;
+}
+
+#content {
+	width:100%;
+	max-width:960px;
+	margin:0 auto;
+	display:block;
+	color: #000;
+}
+
+#content2 {
+	width:100%;
+	max-width:1120px;
+	margin:0 auto;
+	display:block;
+	color: #000;
+}
+
+#footer {
+	width:100%;
+	max-width:960px;
+	margin:15px auto 100px;
+	display:block;
+	color: #888;
+}
+
+.page-header{
+	text-decoration: none;
+}
+
+.sinarmas-logo-siv{
+	padding: 20px 0px;
+}
+
+
+
+@media only screen and (min-width: 680px){
+    .sinarmas-logo{
+        padding: 0px 100px
+    }
+    
+    .sinarmas-logo-siv{
+        padding: 20px 200px
+    }
+
+}

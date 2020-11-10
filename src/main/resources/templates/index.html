@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sinarmas MSIG Life | Video Recording</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/vc.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/getHTMLMediaElement.css">
+
+    <script type="text/javascript" src="js/RecordRTC.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- web streams API polyfill to support Firefox -->
+    <script src="js/polyfill.min.js"></script>
+
+    <!-- ../libs/DBML.js to fix video seeking issues -->
+    <script src="js/EBML.js"></script>
+
+    <!-- for Edge/FF/Chrome/Opera/etc. getUserMedia support -->
+    <script src="js/adapter-latest.js"></script>
+    <script src="js/DetectRTC.js"> </script>
+
+    <!-- video element -->
+    <script src="js/getHTMLMediaElement.js"></script>
+
+    <link rel="shortcut icon" href="img/eas.ico" type="image/x-icon" />
+</head>
+
+<body>  
+    <div class="container-fluid">
+        <div class="row" id="content" style="margin-top: 0; padding: 10px;">
+            <div class="col-md-12 col-xs-12">
+                <div class="page-header text-center sinarmas-logo">
+                    <img src="img/sinarmas_msig_logo.png" alt="Sinarmas MSIG Life" class="img-responsive" width="100%" max-width="700px">
+                    <!-- SET RECORDING VIDEO + AUDIO AUTOMATICALLY -->
+                    <input type="hidden" id="recording-media" name="recording-media" value="record-audio-plus-video">
+                </div>
+                <div class="row" style="margin-top: 50px">
+                    <div class="col-md-12 col-xs-12 text-center">
+                        <div id="recording-player"></div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px">
+                    <div class="col-md-12">
+                        <div class="col-md-6 col-xs-6 text-center">
+                            <button type="button" class="btn btn-danger" id="btn-start-recording">Start Recording</button>
+                        </div>
+                        <div class="col-md-6 col-xs-6 text-center">
+                            <button type="button" class="btn btn-success" id="upload-to-server" disabled="true">Upload to Server</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/ajsrecord.js"></script>
+</body>
+
+</html>
